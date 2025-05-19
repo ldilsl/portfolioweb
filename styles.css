@@ -1,0 +1,190 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo e fontes */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header e navegação */
+header {
+  background: #333;
+  color: white;
+  padding: 10px;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Conteúdo principal */
+main {
+  padding: 20px;
+}
+
+main h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Formulário de contato */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form label {
+  margin-bottom: 5px;
+}
+
+form input, form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #444;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+/* Paleta atualizada */
+:root {
+  --bg: #f9f9f9;
+  --text: #333;
+  --primary: #0077cc;
+  --primary-hover: #005fa3;
+  --header-bg: #222;
+  --footer-bg: #222;
+  --nav-hover: #ffffff;
+  --nav-hover-bg: #444;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Cabeçalho */
+header {
+  background-color: var(--header-bg);
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: white;
+  font-weight: 600;
+  transition: background 0.3s, color 0.3s;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+
+header nav ul li a:hover {
+  background-color: var(--nav-hover-bg);
+  color: var(--nav-hover);
+}
+
+/* Conteúdo principal */
+main {
+  padding: 40px 20px;
+  max-width: 960px;
+  margin: auto;
+}
+
+main h1 {
+  font-size: 2.5em;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+main p, main li {
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+main ul {
+  padding-left: 20px;
+}
+
+/* Formulários */
+form input, form textarea {
+  font-size: 16px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+form button {
+  background-color: var(--primary);
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: var(--primary-hover);
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--footer-bg);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  margin-top: 40px;
+}
